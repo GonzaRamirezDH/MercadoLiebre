@@ -92,7 +92,7 @@ main{
 .descripcion{
     font-size: 16px;
     color: #666;
-    display: none;
+    opacity: 0%;
 }
 
 img{
@@ -147,6 +147,23 @@ img{
     width: 60%;
 }
 
+.form-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.intereses{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.perfil-user, .intereses{
+    margin: 10px 0px;
+}
+
 .controls{
     width:90%;
     padding: 5px;
@@ -163,6 +180,7 @@ img{
     }
     .descripcion:hover{
         display: flex;
+        opacity: 100%;
     }
     .productos{
         width: 40vw;
@@ -217,4 +235,36 @@ img{
     100%{
         transform: rotateZ(-90deg);
     }
+}
+
+.login{
+    width: 60%;
+    height: 40%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.user, .pass{
+    padding: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+.boton-ingresar{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0px;
+    background-color: #1259c3;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.boton-ingresar:hover{
+    background-color: #0022AA;
 }

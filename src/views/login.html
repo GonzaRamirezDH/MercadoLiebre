@@ -46,13 +46,11 @@ rel="stylesheet" />
     </header>
 
     <main class="login">
-        <form action="/login" method="post">
-            <input type="text" name="usuario" placeholder="Nombre de usuario">
-            <input type="password" name="contraseña" placeholder="Ingresá tu contraseña">
-            <button type="submit">Ingresar</button>
-        </form>
-        
-
+        <form action="/login" method="post" class="formulario">
+            <input type="text" name="usuario" placeholder="Nombre de usuario" class="user" required>
+            <input type="password" name="contraseña" placeholder="Ingresá tu contraseña" class="pass" required>
+            <button type="submit" class="boton-ingresar">Ingresar</button>
+        </form>        
     </main>
 
     <footer>

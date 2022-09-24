@@ -46,7 +46,7 @@ rel="stylesheet" />
     </header>
 
     <main class="form-registro">
-        <form action="/register" method="post">
+        <form action="/register" method="post" class="form-register">
 
             <input type="text" name="nombre" placeholder="Nombre y Apellido" class="controls">
             <input type="text" name="usuario" placeholder="Nombre de usuario" class="controls">
@@ -54,33 +54,36 @@ rel="stylesheet" />
             <label for="fecha-nacimiento">Fecha de Nacimiento</label>
             <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
             <input type="text" name="domicilio" placeholder="Domicilio" class="controls">
-            <p>Perfil de Usuario:</p>
-            <input type="radio" name="perfil" value="comprador" id="comprador">
-            <label for="comprador">Comprador</label>
-            <input type="radio" name="perfil" value="vendedor" id="vendedor">
-            <label for="vendedor">Vendedor</label>
-
-            <p>Categoría de Interés:</p>
-            <input type="checkbox" name="intereses" value="Electro" id="electro">
-            <label for="electro">Electro</label>
-            <input type="checkbox" name="intereses" value="Moda" id="moda">
-            <label for="moda">Moda</label>            
-            <input type="checkbox" name="intereses" value="Hogar" id="hogar">
-            <label for="hogar">Hogar</label>
-            <input type="checkbox" name="intereses" value="Jugueteria" id="jugueteria">
-            <label for="jugueteria">Juguetería</label>
-            <input type="checkbox" name="intereses" value="Vida Sana" id="vida-sana">
-            <label for="vida-sana">Vida Sana</label>
-
-            <label for="avatar">Foto de Usuario</label>
-            <input type="file" accept=".jpg, .png" name="avatar" id="avatar" class="controls">
-
+            <div class="perfil-user">
+                <p>Perfil de Usuario:</p>
+                <input type="radio" name="perfil" value="comprador" id="comprador">
+                <label for="comprador">Comprador</label>
+                <input type="radio" name="perfil" value="vendedor" id="vendedor">
+                <label for="vendedor">Vendedor</label>
+            </div>
+            <div class="intereses">
+                <p>Categoría de Interés:</p>
+                <input type="checkbox" name="intereses" value="Electro" id="electro">
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="intereses" value="Moda" id="moda">
+                <label for="moda">Moda</label>            
+                <input type="checkbox" name="intereses" value="Hogar" id="hogar">
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="intereses" value="Jugueteria" id="jugueteria">
+                <label for="jugueteria">Juguetería</label>
+                <input type="checkbox" name="intereses" value="Vida Sana" id="vida-sana">
+                <label for="vida-sana">Vida Sana</label>
+            </div>
+            <div>
+                <label for="avatar">Foto de Usuario</label>
+                <input type="file" accept=".jpg, .png" name="avatar" id="avatar" class="controls">
+            </div>
             <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="controls">
             <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="Confirme su contraseña" class="controls">
-
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar</button>
-
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
         </form>
 
     </main>
